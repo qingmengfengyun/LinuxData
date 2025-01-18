@@ -10,3 +10,6 @@
 [submodule "git/powerlevel10k-media"]
 	path = git/powerlevel10k-media
 	url = https://github.com/romkatv/powerlevel10k-media.git
+[submodule "git/yaru"]
+	path = git/yaru
+	url = https://github.com/ubuntu/yaru.git
