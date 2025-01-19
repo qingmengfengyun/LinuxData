@@ -6,8 +6,10 @@
 # log/
 *.swp
 .DS_Store
+__pycache__/
 
 # editor configs
 .vscode
 .idea
+.pyc
 
