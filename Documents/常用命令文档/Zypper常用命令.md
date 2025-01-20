@@ -2,84 +2,84 @@
 
 ## 用法
 ```sh
-zypper [--全 局 选 项 ] <命 令 > [--命 令 选 项 ] [参 数 ]
+zypper [--全局选项] <命令> [--命令选项] [参数]
 ```
 ## 全局选项
-```sh
-       --help, -h              帮 助 。 .
-       --version, -V           输 出 版 本 号 。
-       --quiet, -q             减 少 普 通 输 出 ， 仅 打 印 错 误 信 息 。
-       --verbose, -v           增 加 信 息 的 详 细 程 度
-       --no-abbrev, -A         表 格 中 不 出 现 缩 写 文 本 。
-       --table-style, -s       表 格 样 式 (整 数 )。
-       --rug-compatible, -r    开 启 与 rug 的 兼 容 。
-       --non-interactive, -n   不 询 问 任 何 问 题 ， 自 动 使 用 默 认 的 回 复 。
-       --xmlout, -x            切 换 到 XML 输 出 。
-       --reposd-dir, -D <dir> 使 用 其 他 的 安 装 源 定 义 文 件 目 录 。
-       --cache-dir, -C <dir>   使 用 其 他 的 元 数 据 缓 存 数 据 库 目 录 。
-       --raw-cache-dir <dir>   使 用 其 他 的 原 始 元 数 据 缓 存 目 录 。
-```
+   ```bash
+       --help, -h              # 帮助
+       --version, -V           # 输出版本号
+       --quiet, -q             # 减少普通输出，仅打印错误信息
+       --verbose, -v           # 增加信息的详细程度
+       --no-abbrev, -A         # 表格中不出现缩写文本
+       --table-style, -s       # 表格样式(整数)
+       --rug-compatible, -r    # 开启与rug的兼容
+       --non-interactive, -n   # 不询问任何问题，自动使用默认的回复
+       --xmlout, -x            # 切换到XML输出
+       --reposd-dir, -D <dir>  # 使用其他的安装源定义文件目录
+       --cache-dir, -C <dir>   # 使用其他的元数据缓存数据库目录
+       --raw-cache-dir <dir>   # 使用其他的原始元数据缓存目录
+   ```
 
-```sh
-       Repository Options:
-       --no-gpg-checks         忽 略 GPG 检 查 失 败 并 继 续 。
-       --plus-repo, -p <URI>   使 用 额 外 的 安 装 源 。
-       --disable-repositories 不 从 安 装 源 读 取 元 数 据 。
-       --no-refresh            不 刷 新 安 装 源 。
-```
+   ```sh
+       # Repository Options:
+       --no-gpg-checks         # 忽略GPG检查失败并继续
+       --plus-repo, -p <URI>   # 使用额外的安装源
+       --disable-repositories  # 不从安装源读取元数据
+       --no-refresh            # 不刷新安装源
+   ```
 
 ## 目标选项
-```sh
-       --root, -R <dir>        在 不 同 的 根 目 录 下 操 作 。
-       --disable-system-sources、 -D            不 读 取 系 统 安 装 的 可 解 析 项 。
-```
+   ```sh
+       --root, -R <dir>        # 在不同的根目录下操作
+       --disable-system-sources, -D            # 不读取系统安装的可解析项
+   ```
 
 ## 命令
-```sh
-       help, ?                 打 印 帮 助 。
-       shell, sh               一 次 接 受 多 个 命 令 .
-```
+   ```sh
+       help, ?                 # 打印帮助
+       shell, sh               # 一次接受多个命令
+   ```
 
-```sh
-       安 装 源 操 作 ：
-       repos, lr               列 出 所 有 定 义 的 安 装 源 。
-       addrepo, ar             添 加 一 个 新 的 安 装 源 。具体请看：http://hi.baidu.com/tunaisen/blog/item/4b2af73937ac7ff53b87cec8.html
-       removerepo, rr          删 除 指 定 的 安 装 源 。
-       renamerepo, nr          重 命 名 指 定 的 安 装 源 。
-       modifyrepo, mr          修 改 指 定 的 安 装 源 。
-       refresh, ref            刷 新 所 有 安 装 源 。
-       clean                   清 除 本 地 缓 存 。
-```
+   ```sh
+       # 安装源操作：
+       repos, lr               # 列出所有定义的安装源
+       addrepo, ar             # 添加一个新的安装源。具体请看：http://hi.baidu.com/tunaisen/blog/item/4b2af73937ac7ff53b87cec8.html
+       removerepo, rr          # 删除指定的安装源
+       renamerepo, nr          # 重命名指定的安装源
+       modifyrepo, mr          # 修改指定的安装源
+       refresh, ref            # 刷新所有安装源
+       clean                   # 清除本地缓存
+   ```
 
-```sh
-       软 件 管 理 ：
-       install, in             安 装 软 件 包 。
-       remove, rm              删 除 软 件 包 。
-       verify, ve              检 验 软 件 包 的 依 赖 关 系 的 完 整 性 。
-       update, up              将 已 经 安 装 的 软 件 包 更 新 到 新 的 版 本 。
-       dist-upgrade, dup       执 行 整 个 系 统 的 升 级 。
-       source-install, si      安 装 源 代 码 软 件 包 和 它 们 的 编 译 依 赖 。
-```
+   ```sh
+       # 软件管理：
+       install, in             # 安装软件包
+       remove, rm              # 删除软件包
+       verify, ve              # 检验软件包的依赖关系的完整性
+       update, up              # 将已经安装的软件包更新到新的版本
+       dist-upgrade, dup       # 执行整个系统的升级
+       source-install, si      # 安装源代码软件包和它们的编译依赖
+   ```
 
-```sh
-       查 询 ：
-       search, se              查 找 符 合 一 个 模 式 的 软 件 包 。
-       info, if                显 示 指 定 软 件 包 的 完 整 信 息 。
-       patch-info              显 示 指 定 补 丁 的 完 整 信 息 。
-       pattern-info            显 示 指 定 模 式 的 完 整 信 息 。
-       product-info            显 示 指 定 产 品 的 完 整 信 息 。
-       patch-check, pchk       检 查 补 丁 。
-       list-updates, lu        列 出 可 用 的 更 新 。
-       patches, pch            列 出 所 有 可 用 的 补 丁 。
-       packages, pa            列 出 所 有 可 用 的 软 件 包 。
-       patterns, pt            列 出 所 有 可 用 的 模 式 。
-       products, pd            列 出 所 有 可 用 的 产 品 。
-       what-provides, wp       列 出 能 够 提 供 指 定 功 能 的 软 件 包 。
-```
+   ```sh
+       # 查询 ：
+       search, se              # 查找符合一个模式的软件包
+       info, if                # 显示指定软件包的完整信息
+       patch-info              # 显示指定补丁的完整信息
+       pattern-info            # 显示指定模式的完整信息
+       product-info            # 显示指定产品的完整信息
+       patch-check, pchk       # 检查补丁
+       list-updates, lu        # 列出可用的更新
+       patches, pch            # 列出所有可用的补丁
+       packages, pa            # 列出所有可用的软件包
+       patterns, pt            # 列出所有可用的模式
+       products, pd            # 列出所有可用的产品
+       what-provides, wp       # 列出能够提供指定功能的软件包
+   ```
 
-```sh
-       软 件 包 锁 定 ：
-       addlock, al             添 加 一 个 软 件 包 锁 定 。
-       removelock, rl          取 消 一 个 软 件 包 锁 定 。
-       locks, ll               列 出 当 前 的 软 件 包 锁 定 。
-```
+   ```sh
+       # 软件包锁定：
+       addlock, al             # 添加一个软件包锁定
+       removelock, rl          # 取消一个软件包锁定
+       locks, ll               # 列出当前的软件包锁定
+   ```
