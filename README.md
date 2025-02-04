@@ -9,8 +9,7 @@
 │   ├── java          # java代码文件夹
 │   ├── mysql         # mysql代码文件夹
 │   └── python        # python代码文件夹
-├── Documents        # 文档文件夹
-│   └── 常用命令文档
+├── Documents        # 文档文件夹 obsidian仓库位置
 ├── git              # github仓库代码
 │   ├── powerlevel10k
 │   ├── powerlevel10k-media
