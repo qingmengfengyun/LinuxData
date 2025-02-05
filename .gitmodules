@@ -13,3 +13,6 @@
 [submodule "git/yaru"]
 	path = git/yaru
 	url = https://github.com/ubuntu/yaru.git
+[submodule "obsidian"]
+	path = obsidian
+	url = git@github.com:qingmengfengyun/obsidian.git
