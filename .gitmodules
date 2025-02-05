@@ -13,6 +13,3 @@
 [submodule "git/yaru"]
 	path = git/yaru
 	url = https://github.com/ubuntu/yaru.git
-[submodule "Documents"]
-	path = Documents
-	url = git@github.com:qingmengfengyun/Documents.git
