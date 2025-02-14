@@ -10,12 +10,6 @@
 │   ├── mysql         # mysql代码文件夹
 │   └── python        # python代码文件夹
 ├── Documents        # 文档文件夹 obsidian仓库位置
-├── git              # github仓库代码
-│   ├── powerlevel10k
-│   ├── powerlevel10k-media
-│   ├── yaru
-│   ├── zsh-autosuggestions
-│   └── zsh-syntax-highlighting
 ├── Pictures         # 图片文件夹
 │   ├── 壁纸
 │   └── 头像
@@ -36,12 +30,10 @@
 #### 2. `Documents`文件夹
 该文件夹主要存放各类文档，其中`常用命令文档`文件夹包含一些常用命令的文档，如`git常用命令.md`，记录了git的常用命令，包括存储更改、显示远程仓库、添加远程仓库、删除远程仓库等命令的使用方法。
 
-#### 3. `git`文件夹
-该文件夹存放了一些github仓库的代码，包含`powerlevel10k`、`powerlevel10k-media`、`yaru`、`zsh-autosuggestions`、`zsh-syntax-highlighting`等。
 
-#### 4. `Pictures`文件夹
+#### 3. `Pictures`文件夹
 该文件夹用于存放图片，包含`壁纸`和`头像`两个子文件夹，用于分类存放不同类型的图片。
 
-#### 5. `README.md`文件
+#### 4. `README.md`文件
 该文件是仓库的说明文档，介绍了仓库的基本信息和目录结构。
 
