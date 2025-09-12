@@ -12,7 +12,7 @@ class MySQLCRUD:
         """连接数据库"""
         try:
             self.connection = mysql.connector.connect(
-                host="192.168.31.86", user="QingmPei", password="Pei19921022", database=database
+                host=host, user=user, password=password, database=database
             )
             if self.connection.is_connected():
                 self.current_db = database
