@@ -21,6 +21,7 @@ RUN apt-get update && \
     sudo \
     git \
     zsh \
+    fish \
     stow \
     locales \
     htop \
