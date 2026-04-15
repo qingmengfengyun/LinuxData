@@ -1,0 +1,17 @@
+# custom files
+# custom/
+
+# temp files directories
+# cache/
+# log/
+*.swp
+.DS_Store
+__pycache__/
+# .obsidian/
+# .trash/
+
+# editor configs
+.vscode
+.idea
+.pyc
+

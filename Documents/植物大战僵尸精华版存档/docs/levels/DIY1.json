@@ -1,0 +1,1 @@
+{"Version":2,"Components":[{"Type":"LevelProperty","ChineseName":"\u4E5D\u5BAB\u683C","EnglishName":"Nine-square|Grid","Icon":10,"Creator":"\u91CE\u517D","Background":1,"StartingSun":0},{"Type":"VaseLevel","MinColumn":3,"MaxColumn":8,"PlantVases":[[18,3],[21,5],[3,3],[2,1]],"ZombieVases":[[0,8],[2,6],[8,2],[12,2]],"NumPlantVases":4,"NumZombieVases":0}]}
