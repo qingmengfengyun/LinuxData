@@ -9,7 +9,6 @@ ENV LANGUAGE=zh_CN:zh
 
 # 设置构建参数
 ENV USERNAME=qingm
-ENV PASSWORD=Pei19921022
 ENV USER_UID=1000
 ENV USER_GID=1000
 
@@ -52,10 +51,10 @@ RUN if id "ubuntu" >/dev/null 2>&1; then \
         useradd -m -u $UBUNTU_UID -g $UBUNTU_GID -s /bin/bash ubuntu; \
     fi
 
-# 创建用户组和用户
-RUN groupadd --gid $USER_GID $USERNAME && \
-    useradd --uid $USER_UID --gid $USER_GID -m $USERNAME && \
-    echo "$USERNAME:$PASSWORD" | chpasswd
+# 创建普通用户并赋予 sudo 免密权限（开发环境推荐）
+RUN groupadd --gid ${USER_GID} ${USERNAME} && \
+    useradd --uid ${USER_UID} --gid ${USER_GID} -m ${USERNAME} && \
+    echo "${USERNAME} ALL=(ALL) NOPASSWD: ALL" >> /etc/sudoers
 
 # 配置 sudo 权限
 RUN echo "$USERNAME ALL=(ALL) ALL" > /etc/sudoers.d/$USERNAME && \
@@ -75,9 +74,6 @@ RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
 ENV HOME=/home/$USERNAME
 WORKDIR /home/$USERNAME
 USER $USERNAME
-
-# 复制文件
-COPY . .
 
 # 默认命令
 CMD ["zsh"]
